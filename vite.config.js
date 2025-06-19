@@ -12,7 +12,7 @@ export default defineConfig({
     },
   ],
   root: '.',
-  base: './',
+  base: '/Favola/',
   build: {
     outDir: 'dist',
     emptyOutDir: true,

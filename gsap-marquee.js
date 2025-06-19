@@ -1,7 +1,5 @@
 gsap.registerPlugin(Observer);
 
-alert('script loaded');
-
 const scrollingText1 = gsap.utils.toArray('.rail-1 h4');
 const scrollingText2 = gsap.utils.toArray('.rail-2 h4');
 

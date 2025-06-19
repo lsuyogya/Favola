@@ -12,6 +12,7 @@
   position: relative;
   display: flex;
   width: fit-content;
+  word-spacing: 1.5rem;
   &.rail-2 {
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke: 1px #000;
