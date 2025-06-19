@@ -9,14 +9,17 @@
     <script defer src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
     <script defer src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
     <script defer src="https://unpkg.com/gsap@3/dist/Observer.min.js"></script>
+    <script defer src="https://unpkg.com/split-type" defer></script>
     <script defer>
       document.addEventListener('DOMContentLoaded', () => {
         feather.replace();
       });
     </script>
   </head>
-  <body class="flex min-h-[200vh] flex-col">
-    <header class="">
+  <body class="group/body flex min-h-[500vh] flex-col">
+    <header
+      class="fixed left-0 right-0 top-0 z-10 bg-white py-2 transition-colors group-data-[scroll-top=true]/body:bg-transparent"
+    >
       <div class="container mx-auto flex items-center justify-between">
         <nav>
           <ul class="flex gap-4 uppercase tracking-wider">
@@ -31,23 +34,23 @@
         <div class="iconsWrapper">
           <ul class="flex items-center gap-4">
             <li>
-              <img src="./assets/images/006-magnifying-glass.png" alt="Search" class="h-6 w-6" />
+              <img src="./assets/images/006-magnifying-glass.png" alt="Search" class="h-4 w-4" />
             </li>
             <li>
-              <img src="./assets/images/005-user.png" alt="User" class="h-6 w-6" />
+              <img src="./assets/images/005-user.png" alt="User" class="h-4 w-4" />
             </li>
             <li>
-              <img src="./assets/images/003-shopping-bag-1.png" alt="Cart" class="h-6 w-6" />
+              <img src="./assets/images/003-shopping-bag-1.png" alt="Cart" class="h-4 w-4" />
             </li>
             <li>
-              <i data-feather="menu" class="h-6 w-6"></i>
+              <i data-feather="menu" class="h-4 w-4"></i>
             </li>
           </ul>
         </div>
       </div>
     </header>
     <main class="flex-grow">
-      <section class="bg-gray relative flex min-h-screen items-center">
+      <section class="bannerSection bg-gray relative flex min-h-screen items-center">
         <div class="text-cinzel relative flex w-full flex-col gap-2 py-8">
           <div class="scrolling-text">
             <div
@@ -73,10 +76,23 @@
         <!-- <div class="imgWrapper absolute right-0 top-0"> -->
         <img
           src="./assets/images/Banner Woman.png"
-          class="absolute inset-0 m-auto max-h-full"
+          class="absolute inset-0 z-0 m-auto max-h-full transition-all group-data-[scroll-top=true]/body:z-20"
           alt=""
         />
         <!-- </div> -->
+      </section>
+      <section class="revealBannerSection bg-primary relative py-20">
+        <img src="./assets/images/RevealBannerLogo.png" class="m-auto object-contain" alt="" />
+        <div
+          class="txtContent font-alegreya text-gray-text container absolute inset-0 m-auto grid place-content-center place-items-center gap-6 text-center"
+        >
+          <p class="max-w-[55ch] text-4xl">
+            Inspired by Emirati heritage, we blend timeless tradition with modern elegance — through
+            fragrance and fashion made to leave a lasting impression.
+          </p>
+
+          <a href="#" class="font-alegreya-sans max-w-fit uppercase">About Favola ▶</a>
+        </div>
       </section>
     </main>
     <footer></footer>

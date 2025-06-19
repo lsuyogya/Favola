@@ -108,9 +108,11 @@
   --font-alegreya: 'Alegreya', serif;
   --font-cinzel: 'Cinzel', serif;
   --color-gray: #f2f3f4;
+  --color-gray-text: #8b8b8b;
   --color-primary: #57534b;
   --color-background: #fff;
   --color-foreground: #000;
+  --default-transition-duration: 400ms;
 }
 
 :root {
