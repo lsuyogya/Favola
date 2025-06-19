@@ -108,7 +108,7 @@
   --font-alegreya: 'Alegreya', serif;
   --font-cinzel: 'Cinzel', serif;
   --color-gray: #f2f3f4;
-  --color-gray-text: #8b8b8b;
+  --color-gray-text: rgba(139, 139, 139, 0.5);
   --color-primary: #57534b;
   --color-background: #fff;
   --color-foreground: #000;
