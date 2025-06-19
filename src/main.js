@@ -42,7 +42,7 @@ waitForSplitType().then(() => {
         end: `center center+=${getHeaderHeight()}`, // extend scroll for more gradual effect
         scrub: true,
         // pin: true,
-        markers: true,
+        markers: false,
         anticipatePin: 1,
         // pinSpacing: true,
         // Add padding to avoid abrupt pinning
