@@ -5,18 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Favola</title>
     <link rel="shortcut icon" href="./assets/images/Logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./tw-input.css" />
+    <link rel="stylesheet" href="./marquee.css" />
     <script defer src="https://unpkg.com/feather-icons"></script>
     <script defer src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
     <script defer src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
     <script defer src="https://unpkg.com/gsap@3/dist/Observer.min.js"></script>
-    <script defer src="https://unpkg.com/split-type" defer></script>
+    <script defer src="https://unpkg.com/split-type"></script>
     <script defer>
       document.addEventListener('DOMContentLoaded', () => {
         feather.replace();
       });
     </script>
   </head>
-  <body class="group/body flex min-h-screen flex-col">
+  <body class="group/body flex flex-col">
     <header
       class="fixed left-0 right-0 top-0 z-10 bg-white py-2 transition-colors group-data-[scroll-top=true]/body:bg-transparent"
     >
@@ -111,6 +114,7 @@
       </section>
     </main>
     <footer></footer>
-    <script type="module" src="./src/main.js"></script>
+    <script src="./main.js"></script>
+    <script src="./gsap-marquee.js"></script>
   </body>
 </html>
